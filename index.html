@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Glitch</title>
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="libs/mgGlitch.min.js"></script>
+    </head>
+    <body>
+          <div class="container">
+            <div class="glitch" style="background-image: url(img/glitchIt.jpg);"></div>
+          </div>
+          <script>
+            $(function () {
+              $(".glitch").mgGlitch({
+                destroy: false,
+                glitch: true,
+                scale: true,
+                blend: true,
+                blendModeType: 'hue',
+                glitch1TimeMin: 200,
+                glitch1TimeMax: 400,
+                glitch2TimeMin: 10,
+                glitch2TimeMax: 100,
+              });
+            });
+          </script>
+    </body>
+</html>
